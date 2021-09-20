@@ -9,7 +9,7 @@ logging.basicConfig(filename='record.log', level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 
-@app.route('/debug-influx')
+@app.route('/power-plant')
 def trigger_error():
     power_plant_level = random.randint(0, 100)
     if power_plant_level < 30:
